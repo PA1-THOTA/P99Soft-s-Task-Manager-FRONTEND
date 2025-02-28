@@ -28,7 +28,7 @@ const UsercontextProvider = ({ children }) => {
   });
   const [notificationstasks, setNotificationstasks] = useState([]);
   const [messagestasks, setMessagestasks] = useState([]);
-  const url = "http://localhost:8080";
+  const url = "https://p99-soft-s-task-manager-backend.vercel.app";
   const m = [
     userdetails,
     setUserdetails,
