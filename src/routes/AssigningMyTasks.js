@@ -168,7 +168,7 @@ const AssigningTasks = () => {
       // console.log(selftask);
       setLoading({
         status: true,
-        msg: "Creating Account. Please wait",
+        msg: "Assigning Task. Please wait",
         messagedisplayerbtn: "",
       });
       const dateseparatedlist = selftask.deadline.split("-");
@@ -382,9 +382,17 @@ const AssigningTasks = () => {
           >
             <div>
               <h3>{loading.msg}</h3>
-              <button id="assigningmytasksbtnloadok" onClick={removeloadingbox}>
-                {loading.messagedisplayerbtn}
-              </button>
+
+              {loading.messagedisplayerbtn ? (
+                <button
+                  id="assigningmytasksbtnloadok"
+                  onClick={removeloadingbox}
+                >
+                  {loading.messagedisplayerbtn}
+                </button>
+              ) : (
+                <></>
+              )}
             </div>
           </div>
         ) : (

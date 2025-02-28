@@ -57,7 +57,7 @@ const Professionaltodo = () => {
         .then((response) => {
           setLoading({
             status: false,
-            msg: "Fetching Tasks, Please wait",
+            msg: "",
             messagedisplayerbtn: "",
           });
           // console.log(response.data);
@@ -65,9 +65,9 @@ const Professionaltodo = () => {
         })
         .catch((err) => {
           setLoading({
-            status: false,
-            msg: "Fetching Tasks, Please wait",
-            messagedisplayerbtn: "",
+            status: true,
+            msg: "Something went wrong. Please Try Again",
+            messagedisplayerbtn: "Try Again",
           });
           // console.log(err);
         });
@@ -89,7 +89,10 @@ const Professionaltodo = () => {
             <Link
               to="/assigningmytasks"
               onClick={() => {
-                setEditingselftasks(false);
+                setEditingselftasks({
+                  status: false,
+                  selftask: {},
+                });
               }}
             >
               <h2 id="assigningmytaskslink">ASSIGN SELF TASK</h2>
@@ -213,12 +216,13 @@ const Taskspreview = ({
         </div>
         <div id="prodeadline">
           <h4>
-            Deadline :-{" "}
+            Deadline :-{deadline.slice(0, 10).replaceAll("-", "/")}
+            {/* Deadline :-{" "}
             {new Date(deadline).getFullYear() +
               "/" +
               (new Date(deadline).getMonth() + 1) +
               "/" +
-              (new Date(deadline).getDate() - 1)}
+              (new Date(deadline).getDate() - 1)} */}
           </h4>
         </div>
       </Link>

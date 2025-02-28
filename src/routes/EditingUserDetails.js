@@ -69,7 +69,7 @@ const EditingUserDetails = () => {
     else {
       setLoading({
         status: true,
-        msg: "Creating Account. Please wait",
+        msg: "Editing Details. Please wait",
         messagedisplayerbtn: "",
       });
       // console.log(url)

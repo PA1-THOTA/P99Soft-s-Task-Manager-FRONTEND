@@ -185,7 +185,7 @@ const AssigningTasks = () => {
       // });
       setLoading({
         status: true,
-        msg: "Creating Account. Please wait",
+        msg: "Assigning Task. Please wait",
         messagedisplayerbtn: "",
       });
       const employeedetails = allusers.find(
@@ -205,7 +205,7 @@ const AssigningTasks = () => {
       axios
         .post(`${url}/postTask`, {
           ...assigningtask,
-          deadline: sendingdate,
+          // deadline: sendingdate,
           assignedtogmail: employeedetails.gmail,
         })
         .then((resdata) => {

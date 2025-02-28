@@ -65,9 +65,9 @@ const Personaltodo = () => {
         })
         .catch((err) => {
           setLoading({
-            status: false,
-            msg: "",
-            messagedisplayerbtn: "",
+            status: true,
+            msg: "Something went wrong. Please Try Again",
+            messagedisplayerbtn: "Try Again",
           });
           // console.log(err);
         });
