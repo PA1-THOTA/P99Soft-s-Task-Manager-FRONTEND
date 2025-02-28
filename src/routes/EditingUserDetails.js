@@ -190,6 +190,7 @@ const EditingUserDetails = () => {
                 value={editingtasks.username}
                 placeholder="Ex :- Leanne Graham"
                 readOnly
+                title="You can not change USERNAME"
               />
             </div>
             <div>
@@ -201,6 +202,7 @@ const EditingUserDetails = () => {
                 value={editingtasks.gmail}
                 placeholder="Sincere@april.biz"
                 readOnly
+                title="You can not change EMAIL"
               />
             </div>
           </div>
@@ -289,7 +291,7 @@ const EditingUserDetails = () => {
             top: "0px",
             height: "100%",
             borderRadius: "20px",
-            width:"100%"
+            width: "100%",
           }}
         >
           <div>
@@ -303,20 +305,22 @@ const EditingUserDetails = () => {
             )}
           </div>
         </div>
-      ) : (!username &&
-        <div
-          id="youhavetologintoaccessthispage"
-          style={{
-            height: "100%",
-            width: "100%",
-            // margin: "2.5% 5%",
-            background: "white",
-            position: "absolute",
-            top:"-5%"
-          }}
-        >
-          <h1>You Don't have Privilege to Access this page</h1>
-        </div>
+      ) : (
+        !username && (
+          <div
+            id="youhavetologintoaccessthispage"
+            style={{
+              height: "100%",
+              width: "100%",
+              // margin: "2.5% 5%",
+              background: "white",
+              position: "absolute",
+              top: "-5%",
+            }}
+          >
+            <h1>You Don't have Privilege to Access this page</h1>
+          </div>
+        )
       )}
     </div>
   );
