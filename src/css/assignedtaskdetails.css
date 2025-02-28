@@ -1,0 +1,160 @@
+#taskdetails{
+    width: calc(100vw - 310px);
+    height:calc(100vh - 280px) ;
+    margin: 20px;
+    /* border: 1px solid black; */
+    position: absolute;
+    left:270px;
+    top:230px;
+    /* display: grid;
+    grid-template-columns: repeat(3,calc(calc(100vw - 400px) / 3)); */
+    /* gap: 10px; */
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 1px inset rgb(146, 146, 146);
+    background-color: rgb(238, 238, 238);
+}
+
+#taskdetailsheader{
+    display: flex;
+    /* border: 1px solid rgb(0, 0, 0); */
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+#priority{
+    font-size: 30px;
+    font-weight:700;
+}
+
+.low{
+    color:rgb(175, 158, 0);
+    background-color: rgb(246, 255, 125);
+}
+
+.high{
+    color:rgb(255, 0, 0);
+    background-color: rgb(255, 125, 125);
+    
+}
+
+.medium{
+    color:rgb(197, 118, 0);
+    background-color: rgb(255, 199, 125);
+}
+
+.priorityind{
+    display: inline-block;
+    box-shadow: 2px 4px 3px 1px rgb(131, 131, 131);
+    border-radius:5px;
+    width: 100px;
+    margin-left: 15px;
+    padding: 5px;
+    text-align: center;
+}
+
+#prioritydiv{
+    display: flex;
+    align-items: center;
+}
+
+#by{
+    font-size: 30px;
+    color: rgb(99, 99, 99);
+}
+
+#user{
+    font-size: 30px;
+}
+
+#taskdetailsheader hr{
+    height: 5px;
+    background-color: red;
+    width: 225%;
+    margin-top: 10px;
+}
+
+#taskdetailsheading{
+    /* border: 1px solid rgb(0, 247, 255); */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-weight:1000;
+    font-size: 17px;
+}
+
+#taskcontent{
+    /* border: 1px solid rgb(255, 0, 242); */
+    padding: 0px 20px;
+    text-align: justify;
+    color: rgb(87, 87, 87);
+}
+
+#msgfromdoer{
+    padding: 10px 20px;
+    font-weight: 1000;
+    font-size: 17px;
+}
+
+#msgfromdoerinput{
+    display: inline-block;
+    width: 100%;
+    font-weight: 700;
+    font-size: 17px;
+    margin-top: 10px;
+    border-width: 0px 0px 1px;
+    color: rgb(102, 102, 102);
+    /* outline: 0px 0px 1px; */
+}
+
+#taskmatter{
+    /* border:1px solid rgb(55, 0, 255); */
+    margin: 20px;
+    /* padding: 30px; */
+    height: 70%;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 2px 3px 0px rgb(102, 102, 102);
+}
+
+#infoforassigner{
+    display: flex;
+    margin:10px 0px;
+    padding:0px 50px;
+    justify-content: space-between;
+    align-items:center;
+    width: calc(100% - 40px);
+    height:50px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border: 1px solid black; */
+}
+
+#btndel{
+    color:white;
+    background-color: rgb(255, 0, 0);
+    width: 15%;
+    height: 100%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+#btndel:hover{
+    background-color: yellow;
+    color: green;
+}
+
+#btndel:active{
+    background-color: rgb(0, 255, 213);
+    color: green;
+    box-shadow: 0px 2px 8px 2px inset black;
+}

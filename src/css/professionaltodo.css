@@ -1,0 +1,119 @@
+#probox{
+    width: calc(100vw - 310px);
+    height:calc(100vh - 280px) ;
+    margin: 20px;
+    /* border: 1px solid black; */
+    position: absolute;
+    left:270px;
+    top:230px;
+    /* display: grid;
+    grid-template-columns: repeat(3,calc(calc(100vw - 400px) / 3)); */
+    /* gap: 10px; */
+    align-items: center;
+    justify-content: space-around;
+}
+
+#prochildbox{
+    /* margin: 20px; */
+    height: 100%;
+    /* border: 1px solid red; */
+    padding: 20px;
+    box-shadow: 0px 3px 5px 1px rgb(141, 141, 141) inset;
+    border-radius: 20px;
+    position: relative;
+    overflow: auto;
+}
+
+#protaskchilds{
+    display: grid;
+    grid-template-columns: repeat(3,calc(calc(100vw - 400px) / 3));
+    column-gap: 20px;
+    row-gap: 40px;
+    /* height: 100%; */
+    margin-top: 20px;
+}
+
+#protaskspreview a{
+    text-decoration: none;
+    color: black;
+}
+
+#protaskspreview h3{
+     /* width: 90%; */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+#headertodopart h4{
+    padding: 3px;
+    min-width: 25px;
+    background-color: yellow;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#tickmark{
+    background-color: red;
+    padding: 3px;
+    border-radius: 7px;
+}
+
+
+#headerpart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+
+#headerpart img{
+    width:20px;
+}
+
+#headertodopart{
+    display: flex;
+    min-width:15%;
+    max-width: 60%;
+    /* background-color: aqua; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+hr{
+    height: 4px;
+    background-color: rgb(255, 81, 0);
+}
+
+#protaskspreview{
+    border: 1px solid green;
+    margin-top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    /* background-color:red ; */
+    border-radius: 20px;
+    box-shadow: 0px 3px 5px 1px rgb(104, 104, 104);
+    /* height: 40%; */
+}
+
+#protasksheader{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+}
+
+#proheaderbyuser h4{
+    color: rgb(105, 105, 105);
+}
+
+#prodeadline{
+    /* background-color: rgb(0, 255, 13); */
+    /* display: flex */
+}
+
+#prodeadline h4{
+    justify-self:right;
+    /* background-color: azure; */
+    color: rgb(105, 105, 105);
+}

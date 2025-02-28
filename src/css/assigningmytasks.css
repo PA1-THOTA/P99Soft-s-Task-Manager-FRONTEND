@@ -1,0 +1,274 @@
+#assigningtasks{
+    width: calc(100vw - 310px);
+    height:calc(100vh - 280px) ;
+    margin: 20px;
+    /* border: 1px solid black; */
+    position: absolute;
+    left:270px;
+    top:230px;
+    /* display: grid;
+    grid-template-columns: repeat(3,calc(calc(100vw - 400px) / 3)); */
+    /* gap: 10px; */
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 1px inset rgb(146, 146, 146);
+    background-color: rgb(238, 238, 238);
+    font-weight: 1000;
+}
+
+#assigningtasksheader{
+    display: flex;
+    /* border: 1px solid rgb(0, 0, 0); */
+    justify-content: space-between;
+    padding: 30px 50px 0px;
+}
+
+#assigningtasksheader hr{
+    height: 5px;
+    background-color: red;
+    width: 225%;
+    margin-top: 10px;
+}
+
+#assigningtaskscontent{
+    font-size: 20px;
+    margin: 20px;
+    padding: 50px;
+    height: 75%;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 2px 3px 0px rgb(102, 102, 102);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border:1px solid black;
+}
+
+#assigningtaskscontentfirst{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+#assigningtaskscontentfirstth{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 30%;
+}
+
+#assigningtaskscontentfirstth input{
+    border-width: 0px 0px 2px 0px;
+    font-size: 20px;
+}
+
+#assigningtaskscontentfirsttd{
+    display: flex;
+}
+
+#assigningtaskscontentsecond{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#assigningtaskscontentsecond textarea{
+    /* border-width: 0px 0px 2px 0px; */
+    font-size: 20px;
+}
+
+#assigningtaskscontentthird{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#assigningtaskscontentthirdbt{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 30%;
+}
+
+#assigningtaskscontentthirdbh{
+    display: flex;
+}
+
+#assigningtaskscontentthirdbt input{
+    border-width: 0px 0px 2px 0px;
+    font-size: 20px;
+}
+
+#selectfromemployees{
+    padding: 4px;
+    background-color: rgb(214, 214, 214);
+    border-radius: 10px;
+    font-weight: bold;
+    margin:0px 10px;
+}
+
+#selectfrompriorityoptions{
+    padding: 4px;
+    background-color: rgb(214, 214, 214);
+    border-radius: 10px;
+    font-weight: bold;
+    margin:0px 10px;
+    height: 30px;
+}
+
+#btnassign{
+    color:white;
+    background: linear-gradient( to bottom,rgb(255, 9, 9),rgb(134, 0, 0));
+    width: 15%;
+    height: 100%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+#btnassign:hover{
+    background: yellow;
+    color: green;
+}
+
+#btnassign:active{
+    background: rgb(0, 255, 213);
+    color: green;
+    box-shadow: 0px 2px 8px 2px inset black;
+}
+
+
+#assigningmytaskserrormessage{
+    position: fixed;
+    left: 290px;
+    top:250px;
+    background-color: rgba(92, 92, 92, 0.589);
+    width: calc(100vw - 310px);
+    height:calc(100vh - 280px);
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+#assigningmytaskserrormessage div{
+    width: 40%;
+    border: 1px solid;
+    height: 30%;
+    background-color: rgb(255, 21, 21);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#assigningmytaskserrormessage div h3{
+    display: inline-block;
+    /* border: 1px solid black; */
+    width: 80%;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+
+#assigningmytasksbtnerrok{
+    height: 50px;
+    display: block;
+    /* height:35%; */
+    width: 30%;
+    /* position: relative;
+    left: -50%; */
+    font-size: 20px;
+    border-radius: 20px;
+    background: linear-gradient( to bottom,rgb(9, 255, 9),rgb(0, 133, 7));
+    outline: none;
+    border: none;
+    color: white;
+    box-shadow: 0px 3px 5px 1px rgb(104, 104, 104);
+    padding: 5px;
+}
+
+#assigningmytasksbtnerrok:hover{
+    color:black;
+    background-color: rgb(0, 255, 234);
+    border-radius: 10px;
+}
+
+#assigningmytasksbtnerrok:active{
+    color: rgb(0, 87, 0);
+    box-shadow: 0px 3px 5px 1px rgb(37, 37, 37) inset;
+}
+
+#assigningmytasksloadmessage{
+    position: fixed;
+    left: 290px;
+    top:250px;
+    background-color: rgba(92, 92, 92, 0.589);
+    width: calc(100vw - 310px);
+    height:calc(100vh - 280px);
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+#assigningmytasksloadmessage div{
+    width: 40%;
+    border: 1px solid;
+    height: 30%;
+    background-color: rgb(255, 21, 21);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#assigningmytasksloadmessage div h3{
+    display: inline-block;
+    /* border: 1px solid black; */
+    width: 80%;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+
+#assigningmytasksbtnloadok{
+    height: 50px;
+    display: block;
+    /* height:35%; */
+    width: 30%;
+    /* position: relative;
+    left: -50%; */
+    font-size: 20px;
+    border-radius: 20px;
+    background: linear-gradient( to bottom,rgb(9, 255, 9),rgb(0, 133, 7));
+    outline: none;
+    border: none;
+    color: white;
+    box-shadow: 0px 3px 5px 1px rgb(104, 104, 104);
+    padding: 5px;
+}
+
+#assigningmytasksbtnloadok:hover{
+    color:black;
+    background-color: rgb(0, 255, 234);
+    border-radius: 10px;
+}
+
+#assigningmytasksbtnloadok:active{
+    color: rgb(0, 87, 0);
+    box-shadow: 0px 3px 5px 1px rgb(37, 37, 37) inset;
+}

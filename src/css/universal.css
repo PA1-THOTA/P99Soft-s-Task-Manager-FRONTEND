@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: red; 
+        border-radius: 10px;
+        /* margin-top: 10px;
+        margin-bottom: 10px; */
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #b30000; 
+    }
+
+    ::-webkit-scrollbar-button {
+        /* width: 50px; 
+        height: 50px;  */
+    }
+}
+
+#body{
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+#toponeinsidenav a{
+    color:black;
+    text-decoration: none;
+    box-shadow: 2px 2px 2px 1px black;
+}
+
+#toponeinsidenav a:active{
+    background-color: rgb(83, 255, 83);
+    box-shadow: 0px 0px 10px 5px black inset;
+}
+
+#toponeinsidenav a.active{
+    background-color: green;
+}
+
+#toponeinsidenav a.active h3{
+    color: white;
+}
+
+.button:active{
+
+}
+
+#btndpnf{
+    padding: 10px;
+    background: linear-gradient(to bottom, rgb(9, 255, 9), rgb(0, 133, 7));
+    color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgb(121, 121, 121);
+}
+
+#btndpnf:hover h2{
+    color: green;
+    background: white;
+    border-radius: 5px;
+}
+
+#btndpnf:active{
+    box-shadow: 2px 2px 2px 2px rgb(121, 121, 121) inset;
+}
+
+#btndpnf h2{
+    color: white;
+}

@@ -1,0 +1,154 @@
+#header{
+    display: flex;
+    width: calc(100% - 300px);
+    /* position: absolute; */
+    position: relative;
+    left: 300px;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    /* border: 2px solid black; */
+}
+
+#notificationcount{
+    /* display: flex; */
+    position: absolute;
+    left: 20px;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 10px;
+    display:inline-block;
+    min-width: 15px;
+    min-height: 15px;
+    /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    padding-top: 3px;
+}
+
+#bell{
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+}
+
+#notifications{
+    position: relative;
+    box-shadow: 2px 2px 3px 0.1px black;
+    border-radius: 10px;
+}
+
+#notifications a{
+    display: inline-block;
+    height: 100%;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#notifications:hover{
+    background-color: rgb(99, 99, 99);
+    border-radius: 10px;
+    /* padding: 5px; */
+}
+
+#notifications:hover a{
+    color: rgb(255, 255, 255);
+    /* box-shadow: 2px 2px 2px 2px black; */
+}
+
+#notifications a.active{
+    background-color: green;
+    color: white;
+}
+
+#notifications a:active{
+    background-color: rgb(83, 255, 83);
+    box-shadow: 0px 0px 10px 5px black inset;
+}
+
+#usericon{
+    max-width:50px;
+    max-height: 50px;
+}
+
+#arrowicon{
+    max-width:35px;
+    /* max-height: 50px; */
+}
+
+#userinfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 200px;
+}
+
+#btnh{
+    height: 100px;
+    display: block;
+    height:35%;
+    width: 160%;
+    position: relative;
+    left: -50%;
+    font-size: 20px;
+    border-radius: 20px;
+    background: linear-gradient( to bottom,rgb(255, 9, 9),rgb(134, 0, 0));
+    outline: none;
+    border: none;
+    color: white;
+    box-shadow: 0px 3px 5px 1px rgb(104, 104, 104);
+    padding: 5px;
+    /* background: linear-gradient(red, yellow); */
+}
+
+#btnd{
+    height: 100px;
+    display: block;
+    height:35%;
+    width: 160%;
+    position: relative;
+    left: -50%;
+    font-size: 20px;
+    border-radius: 20px;
+    background: linear-gradient( to bottom,rgb(9, 255, 9),rgb(0, 133, 7));
+    outline: none;
+    border: none;
+    color: white;
+    box-shadow: 0px 3px 5px 1px rgb(104, 104, 104);
+    padding: 5px;
+}
+
+#btnd a{
+    color: white;
+}
+
+#btnh a{
+    color: white;
+}
+
+.button a{
+    width:100%;
+    height: 100%;
+    display: inline-block;
+}
+
+#btnh:hover a{
+    color:black;
+    background-color: rgb(0, 255, 234);
+    border-radius: 10px;
+}
+
+#btnd:hover a{
+    color:black;
+    background-color: rgb(0, 255, 234);
+    border-radius: 10px;
+}
+
+#btnd:active a{
+    color: rgb(9, 255, 9);
+}
+
+#btnh:active a{
+    color: rgb(255, 9, 9);
+}
+
