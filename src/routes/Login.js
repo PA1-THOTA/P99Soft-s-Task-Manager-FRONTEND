@@ -58,7 +58,11 @@ const Login = () => {
   };
 
   const loginaccountfunction = () => {
-    if (!userdetails.gmail.includes("@") || !userdetails.gmail.includes("."))
+    if (
+      !userdetails.gmail.includes("@") ||
+      !userdetails.gmail.includes(".") ||
+      userdetails.gmail.includes(" ")
+    )
       setErrormessage({
         msg: "Please enter a valid email",
       });
@@ -202,11 +206,13 @@ const Login = () => {
         >
           <div>
             <h3>{loading.msg}</h3>
-            {loading.messagedisplayerbtn?
+            {loading.messagedisplayerbtn ? (
               <button button id="btnloadok" onClick={removeloadingbox}>
                 {loading.messagedisplayerbtn}
-              </button>:<></>
-            }
+              </button>
+            ) : (
+              <></>
+            )}
           </div>
         </div>
       ) : (

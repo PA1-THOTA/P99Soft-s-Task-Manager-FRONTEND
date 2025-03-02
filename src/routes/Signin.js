@@ -95,24 +95,26 @@ const Signin = () => {
   const createaccountfunction = () => {
     if (
       signinuserdetails.username == "" ||
-      signinuserdetails.username.length < 3
+      signinuserdetails.username.trim().length < 3
     )
       setErrormessage({
         msg: "Full Name is required and it has to be minimum 3 characters long",
       });
     else if (
       !signinuserdetails.gmail.includes("@") ||
-      !signinuserdetails.gmail.includes(".")
+      !signinuserdetails.gmail.includes(".") ||
+      signinuserdetails.gmail.includes(" ")
     )
       setErrormessage({
         msg: "Please enter a valid email",
       });
     else if (
       signinuserdetails.password == "" ||
-      signinuserdetails.password.length < 8
+      signinuserdetails.password.length < 8 ||
+      signinuserdetails.password.includes(" ")
     )
       setErrormessage({
-        msg: "Password is required and it has to be 8 characters long",
+        msg: "Password is required and it has to be 8 characters long and shouldnot contain spaces",
       });
     else if (signinuserdetails.confirmpassword !== signinuserdetails.password)
       setErrormessage({
@@ -136,13 +138,21 @@ const Signin = () => {
         .post(`${url}/postuser`, signinuserdetails)
         .then((resdata) => {
           // console.log(resdata.data);
-          if (resdata.data == "user Exists") {
+          if (resdata.data == "error") {
+            setLoading({
+              status: true,
+              msg: "Please enter valid details",
+              messagedisplayerbtn: "Try Again",
+            });
+          } else if (resdata.data == "user Exists") {
             setLoading({
               status: true,
               msg: "User Exists",
               messagedisplayerbtn: "Try Login?",
             });
-          } else if (resdata.data == "username Exists,Please try another name") {
+          } else if (
+            resdata.data == "username Exists,Please try another name"
+          ) {
             setLoading({
               status: true,
               msg: "username Exists,Please try another name",
