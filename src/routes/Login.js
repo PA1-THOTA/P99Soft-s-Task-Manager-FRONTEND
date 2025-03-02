@@ -75,11 +75,37 @@ const Login = () => {
       axios
         .post(`${url}/finduser`, userdetails)
         .then((resdata) => {
+          // // console.log(resdata.data);
+          // if (resdata.data == "no user found") {
+          //   setLoading({
+          //     status: true,
+          //     msg: "No User Found",
+          //     messagedisplayerbtn: "Try Again?",
+          //   });
+          // } else {
+          //   setLoading({
+          //     status: false,
+          //     msg: "",
+          //     messagedisplayerbtn: "",
+          //   });
+          //     setUserdetails({
+          //       ...userdetails,
+          //       username: resdata.data[0].username,
+          //       designation: resdata.data[0].designation,
+          //     });
+          //   navigate("/");
+          // }
           // console.log(resdata.data);
           if (resdata.data == "no user found") {
             setLoading({
               status: true,
               msg: "No User Found",
+              messagedisplayerbtn: "Try Again?",
+            });
+          } else if (resdata.data == "invalid email or password") {
+            setLoading({
+              status: true,
+              msg: "Invalid Email or Password",
               messagedisplayerbtn: "Try Again?",
             });
           } else {
@@ -88,11 +114,11 @@ const Login = () => {
               msg: "",
               messagedisplayerbtn: "",
             });
-              setUserdetails({
-                ...userdetails,
-                username: resdata.data[0].username,
-                designation: resdata.data[0].designation,
-              });
+            setUserdetails({
+              ...userdetails,
+              username: resdata.data[0].username,
+              designation: resdata.data[0].designation,
+            });
             navigate("/");
           }
         })
