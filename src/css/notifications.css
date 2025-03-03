@@ -74,7 +74,7 @@
 
 hr{
     height: 4px;
-    background-color: rgb(255, 81, 0);
+    background-color: rgba(85, 85, 85, 0.253);
 }
 
 #taskspreview{

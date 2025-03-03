@@ -91,7 +91,7 @@
 #fixed #dummymsg{
     grid-column:1/5;
     justify-self:auto;
-    background: rgb(44, 20, 20);
+    background: rgba(44, 20, 20, 0.426);
 }
 
 #fixed #filter{
