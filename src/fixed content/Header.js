@@ -41,7 +41,7 @@ const Header = () => {
             <NavLink to="/notifications">
               <span id="bell">&#128276;</span>
               <span id="notificationcount">
-                {notificationstasks.length ? notificationstasks.length : 0}
+                {username?notificationstasks.length ? notificationstasks.length : 0:0}
               </span>{" "}
               Notifications
             </NavLink>

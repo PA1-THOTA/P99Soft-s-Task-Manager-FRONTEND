@@ -84,7 +84,7 @@ const Professionaltodo = () => {
                 <img src="https://pngimg.com/d/dot_PNG4.png" />
               </div>
               <h3>Professional ToDo</h3>
-              <h4>{selftasks.length}</h4>
+              <h4>{username?selftasks.length:0}</h4>
             </div>
             <Link
               to="/assigningmytasks"

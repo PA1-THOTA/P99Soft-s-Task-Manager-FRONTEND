@@ -64,7 +64,7 @@ const Messages = () => {
                 <img src="https://pngimg.com/d/dot_PNG4.png" />
               </div>
               <h3>{btntype}</h3>
-              <h4>{messagestasks.length ? messagestasks.length : 0}</h4>
+              <h4>{username?messagestasks.length ? messagestasks.length : 0:0}</h4>
             </div>
           </div>
 
